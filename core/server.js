@@ -3,7 +3,7 @@ var emp = require("../controllers/chats");
 var settings = require("../settings");
 
 fs = require('fs');
-fs.readFile('/var/nodeFiles/www/index.html');
+fs.readFile('index.html');
 
 http.createServer(function (req, resp) {
     switch (req.method) {
