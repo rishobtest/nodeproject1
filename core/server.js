@@ -2,6 +2,9 @@
 var emp = require("../controllers/chats");
 var settings = require("../settings");
 
+fs = require('fs');
+fs.readFile('/var/nodeFiles/www/index.html');
+
 http.createServer(function (req, resp) {
     switch (req.method) {
         case "GET":
