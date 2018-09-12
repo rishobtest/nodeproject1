@@ -21,6 +21,6 @@ http.createServer(function (req, resp) {
         default:
             break;
     }
-}).listen(settings.webPort, function() {
-    console.log("Started listening at: " + settings.webPort);
+}).listen(process.env.PORT || 5000, function() {
+    console.log("Started listening at: " + process.env.PORT);
 });
