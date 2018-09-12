@@ -1,0 +1,233 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body{
+  font-weight: 1.5;
+  font-size: 100%;
+  font-family: 'Varela Round',  monospace;
+  padding:0;
+  margin:0;
+  text-decoration: none;
+  background-image: url('../img/codingbackground.png');
+  background-size: cover;
+  background-attachment: fixed;
+  width:99%;
+  overflow-x: hidden;
+}
+header{
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+  /*border-bottom:#FFDEAD 5px solid;*/
+  text-decoration: none;
+  box-shadow: 0px 0px 10px;
+  background-color: #F4A460;
+}
+header h2 a:hover {
+    background-color: #FFFFFF;
+}
+header h2 a{
+  font-size: 100%;
+  padding: 0px 10px;
+  transition: background-color 0.5s;
+  border-radius: 5px;
+}
+header a{
+  text-align: center;
+  margin:auto;
+  text-decoration: none;
+  color:#000000;
+}
+@keyframes zoomanimation {
+    0%   {font-size: 100%;}
+    100% {font-size: 110%;}
+}
+h2 a:hover {
+   color: #75001F;
+}
+h2{
+  font-size: 110%;
+}
+.secondbackground{
+  width:75%;
+  margin:auto;
+  box-shadow: 0px 0px 10px;
+  background-color:#FFFFFF;
+}
+.block{
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.img-left{
+  height:150px;
+  margin:auto;
+  margin-right: 5%;
+  float: left;
+  padding-bottom: 20px;
+}
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes hvr-pulse-grow-name {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow-name {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.fa, h1 a{
+  color: black;
+  height: 30px;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.fa:hover, h1 a:hover{
+  color: orange;
+
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+h1 a{
+  font-size: 30px;
+}
+h1 a:hover{
+  -webkit-animation-name: hvr-pulse-grow-name;
+  animation-name: hvr-pulse-grow-name;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  color: black;
+}
+
+p.center{
+  margin-left: 10%;
+  margin-right:10%;
+  line-height: 30px;
+  text-align: justify;
+  overflow: hidden;
+  color:#2e2e2e;
+  padding-bottom: 15px;
+}
+p.work{
+  line-height: 30px;
+  text-align: left;
+  overflow: hidden;
+  color:#2e2e2e;
+}
+h1.myname{
+  text-align: center;
+  font-size: 200%;
+  color:#000000;
+}
+h3{
+  text-align: left;
+  margin-left: 10%;
+}
+h3.workplace{
+  text-align: left;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding-top: 0px;
+}
+h4{
+  text-align: center;
+  font-size: 90%;
+}
+h4.position{
+  text-align: left;
+  font-size: 110%;
+}
+footer{
+  color:white;
+}
+.img-circle {
+    border-radius: 50%;
+    height: 25%;
+    margin: 0 auto;
+    display: block;
+    border: 5px solid #FFDEAD;
+}
+.img-skills {
+    height: 8%;
+    margin: auto;
+    text-align: center;
+}
+.quicklinks img{
+  height:30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.quicklinks{
+  display: block;
+  text-align: center;
+}
+h1.sectionhead{
+  font-size: 160%;
+  text-align: center;
+  padding-top: 20px;
+}
+.col-container {
+    height: auto;
+    padding: 5px;
+    clear: both;
+    margin:auto;
+    text-align: center;
+    width: 100%;
+}
+.col {
+    float: center;
+    width: 18.75%;
+    display: inline-block;
+    margin:auto;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
+.border {
+    width: 60%;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px #F4A460 solid;
+    margin: 5px auto;
+}
+.progress-75 {
+    height: 10px;
+    width: 75%;
+    background-color:#F4A460;
+    border-radius: 10px 0 0 10px;
+}
+.progress-50 {
+    height: 10px;
+    width: 50%;
+    background-color:#F4A460;
+    border-radius: 10px 0 0 10px;
+}

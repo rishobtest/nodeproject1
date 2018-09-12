@@ -4,7 +4,7 @@ var settings = require("../settings");
 var fs = require('fs');
 
 
-fs.readFile('index.html', function (err, html) {
+fs.readFile('site/index.html', function (err, html) {
     if (err) throw err;
 
 http.createServer(function (req, resp) {
