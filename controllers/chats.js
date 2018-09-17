@@ -1,7 +1,8 @@
 ﻿var db = require("../core/db");
+var express = require("express");
 
-exports.getList = function (req, resp) {
-    db.executeSql("SELECT * FROM dbo.User_Table", function (data, err) {
+exports.auth = function (req, resp, username, passcode) {
+    db.executeSql("select * from dbo.User_Table where Username = '"+username+"' and Passcode = '"+passcode+"'", function (data, err) {
         if (err) {
             resp.writeHead(500, "Internal Error occurred", { "Content-Type": "text/html" });
             resp.write("<html><head><title>500</title></head><body>500: Internal Error. Details: " + err + "</body></html>");
@@ -12,9 +13,6 @@ exports.getList = function (req, resp) {
         }
         resp.end();
     });
-};
-
-exports.get = function (req, resp, name) {
 };
 
 exports.add = function (req, resp, reqBody) {
