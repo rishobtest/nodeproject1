@@ -34,7 +34,7 @@ http.createServer(function (req, resp) {
             default:
                 break;
         }
-    }).listen(5000, function () {
-        console.log("Started listening at: " + 5000);
+}).listen(process.env.PORT || 5000, function () {
+    console.log("Started listening at: " + process.env.PORT);
     })
 });
