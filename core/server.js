@@ -18,7 +18,10 @@ http.createServer(function (req, resp) {
     
         switch (req.method) {
             case "GET":
-                if(req.url.toString().includes("/auth")) {
+                if (req.url === "/") {
+                    resp.end();
+                }
+                else if(req.url.toString().includes("/auth")) {
                     emp.auth(req, resp, (url.parse(req.url, true)).query.username, (url.parse(req.url, true)).query.passcode);
                 }
                 break;
